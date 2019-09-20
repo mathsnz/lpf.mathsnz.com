@@ -160,6 +160,7 @@ button, input, optgroup, select, textarea {
 }
 h3{
 	margin:0px;
+	font-size:20px;
 }
 .popover {
     position: fixed;
@@ -266,6 +267,38 @@ iframe {
 .moedisplaybuttons{
 	margin-left:20px;
 }
+quote{
+	display:block;
+	border:1px solid #0B3C5D;
+	padding:5px;
+}
+h4 {
+	font-size:20px;
+	font-weight:normal;
+}
+a {
+	color:#0B3C5D;
+	font-weight:bold;
+}
+.togglecl{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:3px;
+	height:3px;
+	background-color: #1D2731;
+	z-index:6;
+}
+.showcl{
+	position:absolute;
+	left:20px;
+	right:20px;
+	z-index:-1;
+	height:740px;
+	display:none;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 </style>
 </head>
 <body>
@@ -273,423 +306,259 @@ iframe {
 	<b>Base Maths Concepts</b> <i>Linked to the Learning Progression Framework</i>
 	<span style='float:right'>Home | About</span>
 </div>
+<div class=togglecl></div>
 <div class=content>
 <h3>UNDER DEVELOPMENT</h3>
-<h3>About</h3>
-This page is designed to support teachers using the Learning Progression Framework by unpacking the base skills and linking them to the different sets in the Learning Progression Framework. For more details on this see the about page.<br>
+<br>
+<h3>Introduction</h3>
+We created this tool as we think the <a href='https://curriculumprogresstools.education.govt.nz/'>Learing Progressions Framework</a> is well balanced across 
+the maths strands and is levelled well in sets that graduate in difficulty.
+The <a href='https://curriculumprogresstools.education.govt.nz/'>PaCT Tool</a> used for assessment is straight forward to use and tracks student information well internally and passes information from school to school.<br>
+<br>
+<u>However</u>, when looking at the LPFs from a planning perspective, we found the volume of text in the exemplars was overwhelming 
+while still not covering everything included in the big ideas.
+As a result, we didn't know where to begin when <b>planning</b>. Our idea of teaching maths stretches 
+beyond just word problems and rich learning. We know when planning teachers often think about  
+warm-ups, quick lessons, worksheets for relievers, fast google searches, independent games, activities,
+and more. We realised we wanted to know the base maths concepts behind each set to help us <b>plan</b>.<br>
+<br>
+Now that we've made this <b>planning tool</b> we thought it would be worth sharing with others, so teachers at other schools can use this if they find it helpful.<br>
 <br>
 <h3>How to Use</h3>
-To view the skills behind each set click on the dot or the set number. To view the area descriptions click the aspect title.<br>
+To view the concepts behind each set click on the dot or the set number. To view the area descriptions click the aspect title. 
+The framework, descriptors, big ideas and illustrations / exemplars are from the <a href='https://curriculumprogresstools.education.govt.nz/'>Ministry of Education</a>. We have unpacked these to create the base maths concepts for each set.<br>
 <br>
-<div style='position:absolute;left:20px;right:20px;z-index:-1;height:100%;display:none;max-width: 1000px;margin: 0 auto;'>
+<div class='showcl'>
 	<div class=curriculumlabel style='left:0%;width:28.3091048201989%'>1</div>
 	<div class=curriculumlabel style='left:28.3091048201989%;width:13.0833970925784%'>2</div>
 	<div class=curriculumlabel style='left:41.3925019127774%;width:9.79342004590666%'>3</div>
 	<div class=curriculumlabel style='left:51.185921958684%;width:10.7880642693191%'>4</div>
 	<div class=curriculumlabel style='left:61.9739862280031%;width:10.0229533282326%'>5</div>
 	<div class=curriculumlabel style='left:71.9969395562356%;width:28.0030604437644%'>6</div>
-	<br><br>
-</div>
+	<br><br></div>
 <h3>Aspects</h3>
 <div class="aspect-item">
 <h4>
 <button>Additive thinking
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description">
-<p>This progression is similar to the additive domain of the Number Framework in that it focuses on the increasingly sophisticated and flexible addition and subtraction strategies that students develop to solve increasingly complex problems. However, the sets of exemplars are not a direct match to the stages of the Number Framework. For example, imaging (stage 3 in the additive domain) is not identified by a discrete set of exemplars, and the higher stages of the domain are represented by more than one set of exemplars.
-</p>
-</div>
+<p>This progression is similar to the additive domain of the Number Framework in that it focuses on the increasingly sophisticated and flexible addition and subtraction strategies that students develop to solve increasingly complex problems. However, the sets of exemplars are not a direct match to the stages of the Number Framework. For example, imaging (stage 3 in the additive domain) is not identified by a discrete set of exemplars, and the higher stages of the domain are represented by more than one set of exemplars.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="97" style="left: 6.35042%;">
-</button>
-<button class="set-dot" title="2nd set" id="98" style="left: 15.5318%;">
-</button>
-<button class="set-dot" title="3rd set" id="99" style="left: 24.7131%;">
-</button>
-<button class="set-dot" title="4th set" id="100" style="left: 32.2877%;">
-</button>
-<button class="set-dot" title="5th set" id="101" style="left: 40.7039%;">
-</button>
-<button class="set-dot" title="6th set" id="102" style="left: 47.2839%;">
-</button>
-<button class="set-dot" title="7th set" id="103" style="left: 56.0061%;">
-</button>
-<button class="set-dot" title="8th set" id="104" style="left: 64.4989%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="97" style="left: 6.35042%;"></button>
+<button class="set-dot" title="2nd set" id="98" style="left: 15.5318%;"></button>
+<button class="set-dot" title="3rd set" id="99" style="left: 24.7131%;"></button>
+<button class="set-dot" title="4th set" id="100" style="left: 32.2877%;"></button>
+<button class="set-dot" title="5th set" id="101" style="left: 40.7039%;"></button>
+<button class="set-dot" title="6th set" id="102" style="left: 47.2839%;"></button>
+<button class="set-dot" title="7th set" id="103" style="left: 56.0061%;"></button>
+<button class="set-dot" title="8th set" id="104" style="left: 64.4989%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 6.35042%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 15.5318%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 24.7131%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 32.2877%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 40.7039%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 47.2839%;">6th
-</button>
-<button class="set-dot-text" title="7th set" style="left: 56.0061%;">7th
-</button>
-<button class="set-dot-text" title="8th set" style="left: 64.4989%;">8th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 6.35042%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 15.5318%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 24.7131%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 32.2877%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 40.7039%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 47.2839%;">6th</button>
+<button class="set-dot-text" title="7th set" style="left: 56.0061%;">7th</button>
+<button class="set-dot-text" title="8th set" style="left: 64.4989%;">8th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Multiplicative thinking
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>This progression combines elements from both the multiplicative and proportional domains of the Number Framework. However, as with additive thinking, the sets of exemplars are not a direct match to the stages of the Number Framework. This progression focuses on students' ability to think multiplicatively as they solve multiplication, division, and proportional problems involving an extended range of whole numbers, decimals, fractions, ratios, and percentages, and in a range of contexts.
-</p>
-</div>
+<p>This progression combines elements from both the multiplicative and proportional domains of the Number Framework. However, as with additive thinking, the sets of exemplars are not a direct match to the stages of the Number Framework. This progression focuses on students' ability to think multiplicatively as they solve multiplication, division, and proportional problems involving an extended range of whole numbers, decimals, fractions, ratios, and percentages, and in a range of contexts.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="105" style="left: 9.86993%;">
-</button>
-<button class="set-dot" title="2nd set" id="106" style="left: 22.8003%;">
-</button>
-<button class="set-dot" title="3rd set" id="107" style="left: 35.7307%;">
-</button>
-<button class="set-dot" title="4th set" id="108" style="left: 43.9939%;">
-</button>
-<button class="set-dot" title="5th set" id="109" style="left: 48.8141%;">
-</button>
-<button class="set-dot" title="6th set" id="110" style="left: 54.3994%;">
-</button>
-<button class="set-dot" title="7th set" id="111" style="left: 61.1324%;">
-</button>
-<button class="set-dot" title="8th set" id="112" style="left: 68.0949%;">
-</button>
-<button class="set-dot" title="9th set" id="113" style="left: 74.9809%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="105" style="left: 9.86993%;"></button>
+<button class="set-dot" title="2nd set" id="106" style="left: 22.8003%;"></button>
+<button class="set-dot" title="3rd set" id="107" style="left: 35.7307%;"></button>
+<button class="set-dot" title="4th set" id="108" style="left: 43.9939%;"></button>
+<button class="set-dot" title="5th set" id="109" style="left: 48.8141%;"></button>
+<button class="set-dot" title="6th set" id="110" style="left: 54.3994%;"></button>
+<button class="set-dot" title="7th set" id="111" style="left: 61.1324%;"></button>
+<button class="set-dot" title="8th set" id="112" style="left: 68.0949%;"></button>
+<button class="set-dot" title="9th set" id="113" style="left: 74.9809%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 9.86993%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 22.8003%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 35.7307%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 43.9939%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 48.8141%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 54.3994%;">6th
-</button>
-<button class="set-dot-text" title="7th set" style="left: 61.1324%;">7th
-</button>
-<button class="set-dot-text" title="8th set" style="left: 68.0949%;">8th
-</button>
-<button class="set-dot-text" title="9th set" style="left: 74.9809%;">9th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 9.86993%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 22.8003%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 35.7307%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 43.9939%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 48.8141%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 54.3994%;">6th</button>
+<button class="set-dot-text" title="7th set" style="left: 61.1324%;">7th</button>
+<button class="set-dot-text" title="8th set" style="left: 68.0949%;">8th</button>
+<button class="set-dot-text" title="9th set" style="left: 74.9809%;">9th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Patterns and relationships
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>This algebraic thinking progression develops students' understanding of the structure of and the relationships within numbers, shapes, and measures. In exploring patterns of increasing complexity, students develop the ability to recognise, explain, and generalise relationships between quantities and objects.
-</p>
-</div>
+<p>This algebraic thinking progression develops students' understanding of the structure of and the relationships within numbers, shapes, and measures. In exploring patterns of increasing complexity, students develop the ability to recognise, explain, and generalise relationships between quantities and objects.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="114" style="left: 4.43764%;">
-</button>
-<button class="set-dot" title="2nd set" id="115" style="left: 19.5868%;">
-</button>
-<button class="set-dot" title="3rd set" id="116" style="left: 34.736%;">
-</button>
-<button class="set-dot" title="4th set" id="117" style="left: 47.2073%;">
-</button>
-<button class="set-dot" title="5th set" id="118" style="left: 56.1591%;">
-</button>
-<button class="set-dot" title="6th set" id="119" style="left: 68.5539%;">
-</button>
-<button class="set-dot" title="7th set" id="120" style="left: 79.2655%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="114" style="left: 4.43764%;"></button>
+<button class="set-dot" title="2nd set" id="115" style="left: 19.5868%;"></button>
+<button class="set-dot" title="3rd set" id="116" style="left: 34.736%;"></button>
+<button class="set-dot" title="4th set" id="117" style="left: 47.2073%;"></button>
+<button class="set-dot" title="5th set" id="118" style="left: 56.1591%;"></button>
+<button class="set-dot" title="6th set" id="119" style="left: 68.5539%;"></button>
+<button class="set-dot" title="7th set" id="120" style="left: 79.2655%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 4.43764%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 19.5868%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 34.736%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 47.2073%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 56.1591%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 68.5539%;">6th
-</button>
-<button class="set-dot-text" title="7th set" style="left: 79.2655%;">7th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 4.43764%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 19.5868%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 34.736%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 47.2073%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 56.1591%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 68.5539%;">6th</button>
+<button class="set-dot-text" title="7th set" style="left: 79.2655%;">7th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Using symbols and expressions to think mathematically
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>This algebraic thinking progression is fundamental to all other aspects of mathematics. It focuses on the ways in which symbols, expressions, and equations are used to communicate mathematical ideas. In solving problems in a range of contexts, students must make sense of the symbols they read and must be able to express their understanding of a problem, using the symbolic language of mathematics.
-</p>
-</div>
+<p>This algebraic thinking progression is fundamental to all other aspects of mathematics. It focuses on the ways in which symbols, expressions, and equations are used to communicate mathematical ideas. In solving problems in a range of contexts, students must make sense of the symbols they read and must be able to express their understanding of a problem, using the symbolic language of mathematics.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="121" style="left: 9.48738%;">
-</button>
-<button class="set-dot" title="2nd set" id="122" style="left: 24.7896%;">
-</button>
-<button class="set-dot" title="3rd set" id="123" style="left: 40.0153%;">
-</button>
-<button class="set-dot" title="4th set" id="124" style="left: 48.4315%;">
-</button>
-<button class="set-dot" title="5th set" id="125" style="left: 58.837%;">
-</button>
-<button class="set-dot" title="6th set" id="126" style="left: 69.3191%;">
-</button>
-<button class="set-dot" title="7th set" id="127" style="left: 79.7246%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="121" style="left: 9.48738%;"></button>
+<button class="set-dot" title="2nd set" id="122" style="left: 24.7896%;"></button>
+<button class="set-dot" title="3rd set" id="123" style="left: 40.0153%;"></button>
+<button class="set-dot" title="4th set" id="124" style="left: 48.4315%;"></button>
+<button class="set-dot" title="5th set" id="125" style="left: 58.837%;"></button>
+<button class="set-dot" title="6th set" id="126" style="left: 69.3191%;"></button>
+<button class="set-dot" title="7th set" id="127" style="left: 79.7246%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 9.48738%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 24.7896%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 40.0153%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 48.4315%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 58.837%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 69.3191%;">6th
-</button>
-<button class="set-dot-text" title="7th set" style="left: 79.7246%;">7th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 9.48738%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 24.7896%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 40.0153%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 48.4315%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 58.837%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 69.3191%;">6th</button>
+<button class="set-dot-text" title="7th set" style="left: 79.7246%;">7th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Geometric thinking
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>As students make sense of and navigate their spatial world, they come to recognise, describe, and use the properties and symmetries of shapes, and to describe movement and position with increasing accuracy.
-</p>
-</div>
+<p>As students make sense of and navigate their spatial world, they come to recognise, describe, and use the properties and symmetries of shapes, and to describe movement and position with increasing accuracy.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="128" style="left: 12.7774%;">
-</button>
-<button class="set-dot" title="2nd set" id="129" style="left: 27.3145%;">
-</button>
-<button class="set-dot" title="3rd set" id="130" style="left: 41.9281%;">
-</button>
-<button class="set-dot" title="4th set" id="131" style="left: 54.7054%;">
-</button
-<button class="set-dot" title="5th set" id="132" style="left: 65.723%;">
-</button>
-<button class="set-dot" title="6th set" id="133" style="left: 77.6588%;">
-</button>
+<button class="set-dot" title="1st set" id="128" style="left: 12.7774%;"></button>
+<button class="set-dot" title="2nd set" id="129" style="left: 27.3145%;"></button>
+<button class="set-dot" title="3rd set" id="130" style="left: 41.9281%;"></button>
+<button class="set-dot" title="4th set" id="131" style="left: 54.7054%;"></button>
+<button class="set-dot" title="5th set" id="132" style="left: 65.723%;"></button>
+<button class="set-dot" title="6th set" id="133" style="left: 77.6588%;"></button>
 </div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 12.7774%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 27.3145%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 41.9281%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 54.7054%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 65.723%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 77.6588%;">6th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 12.7774%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 27.3145%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 41.9281%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 54.7054%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 65.723%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 77.6588%;">6th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Measurement sense
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>Understanding what a measurable attribute is and becoming familiar with the units, systems, and processes that are used in measuring attributes is the focus of this progression. Progression in the understanding of measurement is determined by increased sophistication in the measurable attributes of objects and the complexity of the attribute being measured.
-</p>
-</div>
+<p>Understanding what a measurable attribute is and becoming familiar with the units, systems, and processes that are used in measuring attributes is the focus of this progression. Progression in the understanding of measurement is determined by increased sophistication in the measurable attributes of objects and the complexity of the attribute being measured.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="134" style="left: 13.8485%;">
-</button>
-<button class="set-dot" title="2nd set" id="135" style="left: 23.8715%;">
-</button>
-<button class="set-dot" title="3rd set" id="136" style="left: 33.9709%;">
-</button>
-<button class="set-dot" title="4th set" id="137" style="left: 41.9281%;">
-</button>
-<button class="set-dot" title="5th set" id="138" style="left: 50.8799%;">
-</button>
-<button class="set-dot" title="6th set" id="139" style="left: 58.6075%;">
-</button>
-<button class="set-dot" title="7th set" id="140" style="left: 67.8653%;">
-</button>
-<button class="set-dot" title="8th set" id="141" style="left: 76.2816%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="134" style="left: 13.8485%;"></button>
+<button class="set-dot" title="2nd set" id="135" style="left: 23.8715%;"></button>
+<button class="set-dot" title="3rd set" id="136" style="left: 33.9709%;"></button>
+<button class="set-dot" title="4th set" id="137" style="left: 41.9281%;"></button>
+<button class="set-dot" title="5th set" id="138" style="left: 50.8799%;"></button>
+<button class="set-dot" title="6th set" id="139" style="left: 58.6075%;"></button>
+<button class="set-dot" title="7th set" id="140" style="left: 67.8653%;"></button>
+<button class="set-dot" title="8th set" id="141" style="left: 76.2816%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 13.8485%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 23.8715%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 33.9709%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 41.9281%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 50.8799%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 58.6075%;">6th
-</button>
-<button class="set-dot-text" title="7th set" style="left: 67.8653%;">7th
-</button>
-<button class="set-dot-text" title="8th set" style="left: 76.2816%;">8th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 13.8485%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 23.8715%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 33.9709%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 41.9281%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 50.8799%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 58.6075%;">6th</button>
+<button class="set-dot-text" title="7th set" style="left: 67.8653%;">7th</button>
+<button class="set-dot-text" title="8th set" style="left: 76.2816%;">8th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Statistical investigations
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>The statistical investigations progression is based on the students' development of an increasingly sophisticated implementation of the statistical inquiry cycle that includes posing investigative questions, collecting data, displaying data, and discussing results.
-</p>
-</div>
+<p>The statistical investigations progression is based on the students' development of an increasingly sophisticated implementation of the statistical inquiry cycle that includes posing investigative questions, collecting data, displaying data, and discussing results.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="142" style="left: 5.66182%;">
-</button>
-<button class="set-dot" title="2nd set" id="143" style="left: 23.1829%;">
-</button>
-<button class="set-dot" title="3rd set" id="144" style="left: 40.7039%;">
-</button>
-<button class="set-dot" title="4th set" id="145" style="left: 52.5631%;">
-</button>
-<button class="set-dot" title="5th set" id="146" style="left: 61.5149%;">
-</button>
-<button class="set-dot" title="6th set" id="147" style="left: 72.15%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="142" style="left: 5.66182%;"></button>
+<button class="set-dot" title="2nd set" id="143" style="left: 23.1829%;"></button>
+<button class="set-dot" title="3rd set" id="144" style="left: 40.7039%;"></button>
+<button class="set-dot" title="4th set" id="145" style="left: 52.5631%;"></button>
+<button class="set-dot" title="5th set" id="146" style="left: 61.5149%;"></button>
+<button class="set-dot" title="6th set" id="147" style="left: 72.15%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 5.66182%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 23.1829%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 40.7039%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 52.5631%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 61.5149%;">5th
-</button>
-<button class="set-dot-text" title="6th set" style="left: 72.15%;">6th
-</button>
-</div>
-</div>
+<button class="set-dot-text" title="1st set" style="left: 5.66182%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 23.1829%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 40.7039%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 52.5631%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 61.5149%;">5th</button>
+<button class="set-dot-text" title="6th set" style="left: 72.15%;">6th</button></div></div>
 <div class="aspect-item">
 <h4>
 <button>Interpreting statistical and chance situations
-<i class="fa fa-caret-down">
-</i>
-</button>
-</h4>
+<i class="fa fa-caret-down"></i></button></h4>
 <div class="aspect-description ">
-<p>As students are exposed to the statistical evidence presented by others, they need to be able to interpret and gain information from what they see, and critically evaluate both the quality of the evidence and the arguments being presented on the basis of that evidence.
-</p>
-</div>
+<p>As students are exposed to the statistical evidence presented by others, they need to be able to interpret and gain information from what they see, and critically evaluate both the quality of the evidence and the arguments being presented on the basis of that evidence.</p></div>
 <div class="center-line-container">
-<div class="center-line center-line-print">
-</div>
-<div class="right-triangle">
-</div>
-</div>
+<div class="center-line center-line-print"></div>
+<div class="right-triangle"></div></div>
 <div class="dots-container">
-<button class="set-dot" title="1st set" id="148" style="left: 6.73298%;">
-</button>
-<button class="set-dot" title="2nd set" id="149" style="left: 23.948%;">
-</button>
-<button class="set-dot" title="3rd set" id="150" style="left: 41.163%;">
-</button>
-<button class="set-dot" title="4th set" id="151" style="left: 53.6343%;">
-</button>
-<button class="set-dot" title="5th set" id="152" style="left: 66.9472%;">
-</button>
-</div>
+<button class="set-dot" title="1st set" id="148" style="left: 6.73298%;"></button>
+<button class="set-dot" title="2nd set" id="149" style="left: 23.948%;"></button>
+<button class="set-dot" title="3rd set" id="150" style="left: 41.163%;"></button>
+<button class="set-dot" title="4th set" id="151" style="left: 53.6343%;"></button>
+<button class="set-dot" title="5th set" id="152" style="left: 66.9472%;"></button></div>
 <div class="dot-texts-container">
-<button class="set-dot-text" title="1st set" style="left: 6.73298%;">1st
-</button>
-<button class="set-dot-text" title="2nd set" style="left: 23.948%;">2nd
-</button>
-<button class="set-dot-text" title="3rd set" style="left: 41.163%;">3rd
-</button>
-<button class="set-dot-text" title="4th set" style="left: 53.6343%;">4th
-</button>
-<button class="set-dot-text" title="5th set" style="left: 66.9472%;">5th
-</button>
+<button class="set-dot-text" title="1st set" style="left: 6.73298%;">1st</button>
+<button class="set-dot-text" title="2nd set" style="left: 23.948%;">2nd</button>
+<button class="set-dot-text" title="3rd set" style="left: 41.163%;">3rd</button>
+<button class="set-dot-text" title="4th set" style="left: 53.6343%;">4th</button>
+<button class="set-dot-text" title="5th set" style="left: 66.9472%;">5th</button>
 </div>
+<h3>About this Tool</h3>
+<h3>About the Authors</h3>
+
+<h3>Contact</h3>
+You can get in touch with Jake at <a href='mailto:jake@mathsnz.com'>jake@mathsnz.com</a> and Olivia at <a href='mailto:jake@mathsnz.com'>olivia@mathsnz.com</a>.<br>
+We'd love to hear from you if you're using what we've created.<br>
+<br>
+<h3>Copyright</h3>
+<h4>Base Maths Concepts (Original Material)</h3>
+All of the material we (Jake Wills and Olivia Walker-Wills) have produced we want teachers to be able to use as freely as possible, and therefore is licenced under the 
+<a href='http://creativecommons.org/licenses/by/3.0/nz/'>Creative Commons Attribution 3.0 New Zealand licence</a>. This means you can take what we have done and use it however
+you would like as long as you give us credit. If you use what we've made, we'd love to hear from you.<br>
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/nz/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+<h4>Material from Ministry of Education</h3>
+The framework, descriptors, big ideas and illustrations / exemplars are from the <a href='https://curriculumprogresstools.education.govt.nz/'>Curriculum Progress Tools Website</a> which are licenced for 
+re-use under the <a href='http://creativecommons.org/licenses/by/3.0/nz/'>Creative Commons Attribution 3.0 New Zealand licence</a>. Text from their website:<br>
+<br>
+<quote>
+Crown copyright. Material on this website is licensed for re-use under the <a href='http://creativecommons.org/licenses/by/3.0/nz/'>Creative Commons Attribution 3.0 New Zealand licence</a>, unless otherwise indicated for specific items. In essence, you are free to copy, distribute and adapt the material, as long as you attribute it and abide by the other licence terms. Note that this licence does not apply to any logos, emblems and trademarks on the website, or to the website's design elements or to any photography and imagery. These specific items may not be re-used without express permission.
+</quote>
 </div>
 <div class='popoverclose popoverclosediv'></div>
 <div class=popover>
@@ -714,7 +583,7 @@ To view the skills behind each set click on the dot or the set number. To view t
 		<iframe></iframe>
 	</div>
 	<div class=popoverdescriptor>
-		<b>What are the big ideas behind the illustration set? (From Ministry of Education)</b><br>
+		<b>What are the big ideas behind the illustration / exemplar set? (From Ministry of Education)</b><br>
 		<span class=bigideas></span>
 	</div>
 	<div class=moedisplay>
@@ -722,10 +591,7 @@ To view the skills behind each set click on the dot or the set number. To view t
 		<div class=moeiframeholder>
 			<iframe></iframe>
 		</div>
-	</div>
-</div>
-</div>
-</body>
+	</div></div></div></body>
 <script>
 var aspect = '';
 var data = [];
@@ -757,7 +623,7 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 		$.each(data[id]['exemplars'],function(key, value){
 			$('.moedisplaybuttons').append('<button class="moestuff moestuffload" load="'+value['PDFFileUrl']+'">'+value['Title']+'</button>');
 		})
-		$('.mydisplay iframe').attr('src','/assets/base/'+aspect+' - '+title.substr(0,1)+'.pdf');
+		$('.mydisplay iframe').attr('src','./assets/base/'+aspect+' - '+title.substr(0,1)+'.pdf');
 		$('.mystuff').click(function(){
 			$('.mydisplay').show();
 			$('.moedisplay').hide();
@@ -783,7 +649,7 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 		$('.moestuffload').click(function(){
 			$('.moedisplaybuttons button').removeClass('selected');
 			$(this).addClass('selected');
-			$('.moeiframeholder iframe').attr('src',$(this).attr('load'));
+			$('.moeiframeholder iframe').attr('src','.'+$(this).attr('load'));
 		});
 		$('.mystuff').click();
 	})
@@ -797,6 +663,9 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 $('.popoverclose').click(function(){
 	$('.selected').removeClass('selected');
 	$('.popover, .popoverclosediv').hide();
+})
+$('.togglecl').click(function(){
+	$('.showcl').toggle();
 })
 </script>
 </html>
