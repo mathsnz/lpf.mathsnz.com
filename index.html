@@ -157,6 +157,7 @@ button, input, optgroup, select, textarea {
     height: 20px;
     padding: 15px;
 	z-index:3;
+	min-width:700px;
 }
 h3{
 	margin:0px;
@@ -300,18 +301,44 @@ a {
 	max-width: 1000px;
 	margin: 0 auto;
 }
+.nav {
+	float:right;
+}
+.nav a{
+	color: #fff;
+	text-decoration:none;
+	font-weight:normal;
+}
+.content h3:before{
+	/* makes the anchor links work correctly */
+	display: block; 
+	content: " "; 
+	margin-top: -60px; 
+	height: 60px; 
+	visibility: hidden; 
+}
+@media (max-width: 870px) {
+  .nav {
+	display:none;
+  }
+}
 </style>
 </head>
 <body>
 <div class=top>
 	<b>Base Maths Concepts</b> <i>Linked to the Learning Progression Framework</i>
-	<span style='float:right'>Home | About</span>
+	<span class=nav>
+		<a href='#'>Intro</a> | 
+		<a href='#usage'>How to Use</a> | 
+		<a href='#aspects'>Aspects</a> | 
+		<a href='#authors'>Authors</a> 
+	</span>
 </div>
 <div class=togglecl></div>
 <div class=content>
 <h3>UNDER DEVELOPMENT</h3>
 <br>
-<h3>Introduction</h3>
+<h3 id=intro>Introduction</h3>
 We created this tool as we think the <a href='https://curriculumprogresstools.education.govt.nz/'>Learing Progressions Framework (LPF)</a> is well balanced across 
 the maths strands and is levelled well in sets that graduate in difficulty.
 The <a href='https://curriculumprogresstools.education.govt.nz/'>PaCT Tool</a> used for assessment is straight 
@@ -329,7 +356,7 @@ that children need to bridge them from the previous set.<br>
 <br>
 Now that we've made this <b>planning tool</b> we thought it would be worth sharing with others, so teachers at other schools can use this if they find it helpful.<br>
 <br>
-<h3>How to Use</h3>
+<h3 id=usage>How to Use</h3>
 To view the concepts behind each set click on the dot or the set number. To view the area descriptions click the aspect title. 
 The framework, descriptors, big ideas and illustrations / exemplars are from the <a href='https://curriculumprogresstools.education.govt.nz/'>Ministry of Education</a>. We have unpacked these to create the base maths concepts for each set.<br>
 <br>
@@ -341,7 +368,7 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 	<div class=curriculumlabel style='left:61.9739862280031%;width:10.0229533282326%'>5</div>
 	<div class=curriculumlabel style='left:71.9969395562356%;width:28.0030604437644%'>6</div>
 	<br><br></div>
-<h3>Aspects</h3>
+<h3 id=aspects>Aspects</h3>
 <div class="aspect-item">
 <h4>
 <button>Additive thinking
@@ -544,10 +571,7 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot-text" title="4th set" style="left: 53.6343%;">4th</button>
 <button class="set-dot-text" title="5th set" style="left: 66.9472%;">5th</button>
 </div>
-<h3>About this Tool</h3>
-<br>
-<br>
-<h3>About the Authors</h3>
+<h3 id=authors>About the Authors</h3>
 Jake and Olivia met at the NZAMT conference in 2014 (a really romantic venue) and got married in 2016. Naturally they share a nerdy passion for all things mathematical.<br>
 <h4>Jake Wills</h4>
 Jake has been teaching secondary maths in New Zealand since 2013. He has twice been awarded the Ernest Duncan award from NZAMT for contribuiton to 
@@ -559,11 +583,11 @@ She has taken a four year gap to raise kids and work from home. While she was te
 in easy and fun ways. She now sells maths worksheets all over the world on <a href='https://www.teacherspayteachers.com/Store/Olivia-Walker'>Teachers Pay Teachers</a>, 
 and her free products have been downloaded well over 400,000 times.<br>
 <br>
-<h3>Contact</h3>
+<h3 id=contact>Contact</h3>
 You can get in touch with Jake at <a href='mailto:jake@mathsnz.com'>jake@mathsnz.com</a> and Olivia at <a href='mailto:jake@mathsnz.com'>olivia@mathsnz.com</a>.<br>
 We'd love to hear from you if you're using what we've created.<br>
 <br>
-<h3>Copyright</h3>
+<h3 id=copyright>Copyright</h3>
 <h4>Base Maths Concepts (Original Material)</h3>
 All of the material we (Jake Wills and Olivia Walker-Wills) have produced we want teachers to be able to use as freely as possible, and therefore is licenced under the 
 <a href='http://creativecommons.org/licenses/by/3.0/nz/'>Creative Commons Attribution 3.0 New Zealand licence</a>. This means you can take what we have done and use it however
