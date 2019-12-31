@@ -645,6 +645,7 @@ Crown copyright. Material on this website is licensed for re-use under the <a hr
 	</div></div></div></body>
 <script>
 var aspect = '';
+var lookingat = 'mystuff';
 var data = [];
 $.getJSON('lpfprocessed.json', function(d) { 
 	data = d;
@@ -681,6 +682,7 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 			$('.popoverdescriptor').hide();
 			$('.popoverbuttons button,.moedisplaybuttons button').removeClass('selected');
 			$('.mystuff').addClass('selected');
+			lookingat = 'mystuff';
 		});
 		$('.showmoestuff').click(function(){
 			$('.mydisplay').hide();
@@ -689,6 +691,7 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 			$('.popoverbuttons button,.moedisplaybuttons button').removeClass('selected');
 			$('.showmoestuff').addClass('selected');
 			$('.moedisplaybuttons button').first().click();
+			lookingat = 'moestuff';
 		});
 		$('.showbigideas').click(function(){
 			$('.mydisplay').hide();
@@ -696,13 +699,22 @@ $('.aspect-item .set-dot-text, .aspect-item .set-dot').click(function(){
 			$('.popoverdescriptor').show();
 			$('.popoverbuttons button,.moedisplaybuttons button').removeClass('selected');
 			$('.showbigideas').addClass('selected');
+			lookingat = 'bigideas';
 		});
 		$('.moestuffload').click(function(){
 			$('.moedisplaybuttons button').removeClass('selected');
 			$(this).addClass('selected');
 			$('.moeiframeholder iframe').attr('src','.'+$(this).attr('load'));
 		});
-		$('.mystuff').click();
+		if(lookingat == 'mystuff'){
+			$('.mystuff').click();
+		} else if (lookingat == 'bigideas'){
+			$('.showbigideas').click();
+		} else if (lookingat == 'moestuff'){
+			$('.showmoestuff').click();
+		} else {
+			$('.mystuff').click();
+		}
 	})
 	$('.popoverrow').find('.dots-container').find('[title="'+title+'"]').click();
 	$('.popover, .popoverclosediv').show();
