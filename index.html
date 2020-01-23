@@ -65,6 +65,17 @@ button, input, optgroup, select, textarea {
     align-items: center;
     margin-bottom: 10px;
 }
+.inline-set-dot-border {
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 2;
+    border:1px solid #000;
+	background-color: #f3e8b7;
+}
 .dots-container .set-dot {
     padding: 0;
     margin: 0;
@@ -78,6 +89,10 @@ button, input, optgroup, select, textarea {
     top: 0;
 	position: absolute; 
 	cursor:pointer;
+}
+.dots-container .set-dot-border {
+    border:1px solid #000;
+	background-color: #f3e8b7;
 }
 .dots-container .set-dot.selected {
     width: 20px;
@@ -95,6 +110,14 @@ button, input, optgroup, select, textarea {
     background-color: #D9B310;
 	border:none;
 }
+.dots-container .set-dot-border.selected {
+    border:5px double #000;
+	background-color: #f3e8b7;
+}
+.dots-container .set-dot-border:hover {
+    border:1px solid #000;
+	background-color: #f3e8b7;
+}
 .dots-container .set-dot.selected:hover {
     width: 20px;
     height: 20px;
@@ -102,6 +125,10 @@ button, input, optgroup, select, textarea {
     top: -2px;
 	background-color:#fff;
     border:5px double #D9B310;
+}
+.dots-container .set-dot-border.selected:hover {
+    border:5px double #000;
+	background-color: #f3e8b7;
 }
 .dot-texts-container .set-dot-text {
     font-size: 16px;
@@ -348,26 +375,29 @@ a {
 <h3>UNDER DEVELOPMENT</h3>
 <br>
 <h3 id=intro>Introduction</h3>
-We created this tool as we think the <a href='https://curriculumprogresstools.education.govt.nz/'>Learning Progressions Framework (LPF)</a> is well balanced across 
-the maths strands and is levelled well in sets that graduate in difficulty.
-The <a href='https://curriculumprogresstools.education.govt.nz/'>PaCT Tool</a> used for assessment is straight 
-forward to use and tracks student information well internally and passes information from school to school.<br>
+We created the base maths concepts (BMC) as a <b>planning</b> tool, to help support the <a href='https://curriculumprogresstools.education.govt.nz/'>Learning Progressions Framework (LPF)</a> 
+and the <a href='https://curriculumprogresstools.education.govt.nz/'>PaCT Tool</a>.
+The LPF is well balanced across the maths strands, it is well levelled in sets that graduate in difficulty.
+The PaCT Tool is used for assessment, it is easy to use and tracks student information well internally and is great for passing student information on when students move schools.<br>
 <br>
-<u>However</u>, when looking at the LPFs from a planning perspective, we found the volume of text in the exemplars 
-was overwhelming for quick planning and the big ideas is not recommended to use as a stand alone tool.
-As a result, we didn't know where to begin when <b>planning</b>. Our idea of teaching maths stretches 
-beyond just word problems and rich learning. We know when planning teachers often think about  
-warm-ups, quick lessons, worksheets, lessons for relievers, fast google searches, independent games, activities,
-and more. To enable us to use the LPFs for <b>all maths planning</b> purposes we also needed to figure out the base maths concepts behind each set.<br>
+<u>However</u>, when <b>planning</b> lessons we felt the Learning Progression Frame work was missing the base mathematical concepts (BMC).
+We know that the 'big ideas' are not recommended to use as a stand alone tool as some terminology can be ambigious without an example. 
+The exemplars on the other hand provide amazing one off lesson examples, but don't explicitly show an example of every base skill mentioned in the big ideas. 
+Over the past year we have slowly studied and pulled apart the whole Learning Progression Framework and created a <b>planning</b> tool that helps pinpoint specific ideas to teach. 
+Our idea of maths teaching goes beyond just word problems and rich lessons. 
+We wanted to help teachers plan for those other maths lessons the warm ups, quick lessons, lessons for relievers, 
+cool downs as well as a tool which will help teachers find levelled worksheets, independent games and activities covering specific skills.<br>
 <br>
-Our base maths concepts break down the each set into small segments, giving an example of most of the underlying skills and some of the pre-skills / number knowledge 
-that children need to bridge them from the previous set.<br>
+Our base maths concepts break down each set into small sections, each concept has short explanations, simple examples or simple diagrams.
+These can be used to quickly prompt a teacher when thinking about what to teach next or what features of a concept to focus on. 
+Some sets include extra pre skills and some sets contain alternative skills that are important to maths learning but haven't been acknowledged in the LPFs e.g. time and adding fractions.<br>
 <br>
-Now that we've made this <b>planning tool</b> we thought it would be worth sharing with others, so teachers at other schools can use this if they find it helpful.<br>
+Now that we've made this <b>planning</b> tool we thought it would be worth sharing with others, so teachers at other schools can use this if they find it helpful.<br>
 <br>
 <h3 id=usage>How to Use</h3>
 To view the concepts behind each set click on the dot or the set number. To view the area descriptions click the aspect title. 
-The framework, descriptors, big ideas and illustrations / exemplars are from the <a href='https://curriculumprogresstools.education.govt.nz/'>Ministry of Education</a>. We have unpacked these to create the base maths concepts for each set.<br>
+The framework, descriptors, big ideas and illustrations / exemplars are from the <a href='https://curriculumprogresstools.education.govt.nz/'>Ministry of Education</a>. 
+We have unpacked these to create the base maths concepts for each set. Sets with dots like this <div class='inline-set-dot-border'></div> contain content that is not normally covered until Year 9 or 10.<br>
 <br>
 <div class='showcl'>
 	<div class=curriculumlabel style='left:0%;width:28.3091048201989%'>1</div>
@@ -395,7 +425,7 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="5th set" id="101" style="left: 40.7039%;"></button>
 <button class="set-dot" title="6th set" id="102" style="left: 47.2839%;"></button>
 <button class="set-dot" title="7th set" id="103" style="left: 56.0061%;"></button>
-<button class="set-dot" title="8th set" id="104" style="left: 64.4989%;"></button></div>
+<button class="set-dot set-dot-border" title="8th set" id="104" style="left: 64.4989%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 6.35042%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 15.5318%;">2nd</button>
@@ -422,8 +452,8 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="5th set" id="109" style="left: 48.8141%;"></button>
 <button class="set-dot" title="6th set" id="110" style="left: 54.3994%;"></button>
 <button class="set-dot" title="7th set" id="111" style="left: 61.1324%;"></button>
-<button class="set-dot" title="8th set" id="112" style="left: 68.0949%;"></button>
-<button class="set-dot" title="9th set" id="113" style="left: 74.9809%;"></button></div>
+<button class="set-dot set-dot-border" title="8th set" id="112" style="left: 68.0949%;"></button>
+<button class="set-dot set-dot-border" title="9th set" id="113" style="left: 74.9809%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 9.86993%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 22.8003%;">2nd</button>
@@ -449,8 +479,8 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="3rd set" id="116" style="left: 34.736%;"></button>
 <button class="set-dot" title="4th set" id="117" style="left: 47.2073%;"></button>
 <button class="set-dot" title="5th set" id="118" style="left: 56.1591%;"></button>
-<button class="set-dot" title="6th set" id="119" style="left: 68.5539%;"></button>
-<button class="set-dot" title="7th set" id="120" style="left: 79.2655%;"></button></div>
+<button class="set-dot set-dot-border" title="6th set" id="119" style="left: 68.5539%;"></button>
+<button class="set-dot set-dot-border" title="7th set" id="120" style="left: 79.2655%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 4.43764%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 19.5868%;">2nd</button>
@@ -474,8 +504,8 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="3rd set" id="123" style="left: 40.0153%;"></button>
 <button class="set-dot" title="4th set" id="124" style="left: 48.4315%;"></button>
 <button class="set-dot" title="5th set" id="125" style="left: 58.837%;"></button>
-<button class="set-dot" title="6th set" id="126" style="left: 69.3191%;"></button>
-<button class="set-dot" title="7th set" id="127" style="left: 79.7246%;"></button></div>
+<button class="set-dot set-dot-border" title="6th set" id="126" style="left: 69.3191%;"></button>
+<button class="set-dot set-dot-border" title="7th set" id="127" style="left: 79.7246%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 9.48738%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 24.7896%;">2nd</button>
@@ -498,8 +528,8 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="2nd set" id="129" style="left: 27.3145%;"></button>
 <button class="set-dot" title="3rd set" id="130" style="left: 41.9281%;"></button>
 <button class="set-dot" title="4th set" id="131" style="left: 54.7054%;"></button>
-<button class="set-dot" title="5th set" id="132" style="left: 65.723%;"></button>
-<button class="set-dot" title="6th set" id="133" style="left: 77.6588%;"></button>
+<button class="set-dot set-dot-border" title="5th set" id="132" style="left: 65.723%;"></button>
+<button class="set-dot set-dot-border" title="6th set" id="133" style="left: 77.6588%;"></button>
 </div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 12.7774%;">1st</button>
@@ -524,8 +554,8 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="4th set" id="137" style="left: 41.9281%;"></button>
 <button class="set-dot" title="5th set" id="138" style="left: 50.8799%;"></button>
 <button class="set-dot" title="6th set" id="139" style="left: 58.6075%;"></button>
-<button class="set-dot" title="7th set" id="140" style="left: 67.8653%;"></button>
-<button class="set-dot" title="8th set" id="141" style="left: 76.2816%;"></button></div>
+<button class="set-dot set-dot-border" title="7th set" id="140" style="left: 67.8653%;"></button>
+<button class="set-dot set-dot-border" title="8th set" id="141" style="left: 76.2816%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 13.8485%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 23.8715%;">2nd</button>
@@ -550,7 +580,7 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="3rd set" id="144" style="left: 40.7039%;"></button>
 <button class="set-dot" title="4th set" id="145" style="left: 52.5631%;"></button>
 <button class="set-dot" title="5th set" id="146" style="left: 61.5149%;"></button>
-<button class="set-dot" title="6th set" id="147" style="left: 72.15%;"></button></div>
+<button class="set-dot set-dot-border" title="6th set" id="147" style="left: 72.15%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 5.66182%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 23.1829%;">2nd</button>
@@ -572,7 +602,7 @@ The framework, descriptors, big ideas and illustrations / exemplars are from the
 <button class="set-dot" title="2nd set" id="149" style="left: 23.948%;"></button>
 <button class="set-dot" title="3rd set" id="150" style="left: 41.163%;"></button>
 <button class="set-dot" title="4th set" id="151" style="left: 53.6343%;"></button>
-<button class="set-dot" title="5th set" id="152" style="left: 66.9472%;"></button></div>
+<button class="set-dot set-dot-border" title="5th set" id="152" style="left: 66.9472%;"></button></div>
 <div class="dot-texts-container">
 <button class="set-dot-text" title="1st set" style="left: 6.73298%;">1st</button>
 <button class="set-dot-text" title="2nd set" style="left: 23.948%;">2nd</button>
