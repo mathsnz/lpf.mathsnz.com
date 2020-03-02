@@ -760,5 +760,14 @@ $('.popoverclose').click(function(){
 $('.togglecl').click(function(){
 	$('.showcl').toggle();
 })
+
+document.onkeydown = checkKey;
+function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '27') {
+        // escape key
+		$('.popoverclose').click();
+    } 
+}
 </script>
 </html>
